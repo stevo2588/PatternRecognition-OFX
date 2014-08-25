@@ -1,6 +1,6 @@
 //==============================================================================
 //
-//  STAMPIES
+//  PATTERN RECOGNITION
 //
 //  Utility.h
 //
@@ -78,56 +78,7 @@ namespace Utility {
         
         int state; // 0: up, 1: down
     };
-    
-    //-------------- CenterDrawable -------------------------
-    // Class for drawing things center
-    class CenterDrawable {
-    public:
-        virtual ~CenterDrawable() {}
-        virtual void draw() =0;
-        virtual CenterDrawable* clone() =0;
-    };
-    
-    class ImageDrawable : public CenterDrawable {
-    public:
-        ~ImageDrawable() { im.clear(); }
-        
-        void set(ofFile& file) { im.loadImage(file); }
-        void draw() {
-            ofSetColor (ofColor(255));
-            ofTranslate(-210, -135);
-            ofScale(0.7f, 0.7f);
-            im.draw(0,0);
-        }
-        CenterDrawable* clone() {
-            return new ImageDrawable(*this);
-        }
-        
-    private:
-        ofImage im;
-    };
-    
-    
-    
-    class ColoredCircleDrawable : public CenterDrawable {
-    public:
-        ColoredCircleDrawable(ofColor c) : c(c) {}
-        void draw() {
-            ofSetColor (c);
-            ofEllipse(0, 0, 200, 200);
-        }
-        CenterDrawable* clone() {
-            return new ColoredCircleDrawable(*this);
-        }
-        
-        ofColor c;
-    };
 
-    //-------------- DrawFunctor ----------------------
-    class DrawFunctor {
-    public:
-        virtual void draw() =0;
-    };
 }
 
 #endif

@@ -1,6 +1,6 @@
 //==============================================================================
 //
-//  STAMPIES
+//  PATTERN RECOGNITION
 //
 //  Level.h
 //
@@ -8,8 +8,8 @@
 //
 //==============================================================================
 
-#ifndef Stampies_Level_h
-#define Stampies_Level_h
+#ifndef PatternRecognition_Level_h
+#define PatternRecognition_Level_h
 
 class testApp;
 

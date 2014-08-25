@@ -1,6 +1,6 @@
 //==============================================================================
 //
-//  STAMPIES
+//  PATTERN RECOGNITION
 //
 //  TouchPatternManager.h
 //
@@ -8,8 +8,8 @@
 //
 //==============================================================================
 
-#ifndef Stampies_TouchManager_h
-#define Stampies_TouchManager_h
+#ifndef PatternRecognition_TouchManager_h
+#define PatternRecognition_TouchManager_h
 
 #include "Pattern.h"
 #include "TouchPattern.h"
@@ -78,7 +78,7 @@ public:
     
     void updateFrame();
     
-    std::vector<Pattern> registeredPatterns; // TODO: PRIVATE
+    std::vector<Pattern> registeredPatterns; // TODO: private
     
 private:
     size_t maxTouches;

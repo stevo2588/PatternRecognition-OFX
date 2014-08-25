@@ -1,6 +1,6 @@
 //==============================================================================
 //
-//  STAMPIES
+//  PATTERN RECOGNITION
 //
 //  TouchPatternManager.mm
 //

@@ -1,6 +1,6 @@
 //==============================================================================
 //
-//  STAMPIES
+//  PATTERN RECOGNITION
 //
 //  Pattern.mm
 //
@@ -19,11 +19,8 @@
 
 Pattern::Pattern(std::vector<ofVec2f> points, int tol) : /*points(points),*/ tolerance(tol)
 {
-    //firstToSecond = points[0] - points[1];
-    
     size_t vertCount = points.size();
     for(int i=1; i<vertCount; i++) {
-        //distToFirst[i-1] = points[0].distance(points[i]);
         vectors.push_back(points[i] - points[0]);
     }
     

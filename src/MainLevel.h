@@ -1,6 +1,6 @@
 //==============================================================================
 //
-//  STAMPIES
+//  PATTERN RECOGNITION
 //
 //  Canvas.h
 //
@@ -8,17 +8,16 @@
 //
 //==============================================================================
 
-#ifndef Stampies_Canvas_h
-#define Stampies_Canvas_h
+#ifndef PatternRecognition_Canvas_h
+#define PatternRecognition_Canvas_h
 
 #include "Level.h"
 #include "TouchPatternManager.h"
 #include "Utility.h"
-class SelectionScreen;
 
-class Canvas : public Level, public TouchPatternListener {
+class MainLevel : public Level, public TouchPatternListener {
 public:
-    Canvas(testApp& app, SelectionScreen &selectionScreen);
+    MainLevel(testApp& app);
     
     void setup(int mode);
     void update();
@@ -34,16 +33,8 @@ public:
     void patternMoved(TouchPattern & pat);
     void patternUp(TouchPattern & pat) {}
     
-    void addDrawable(const Pattern* p, Utility::CenterDrawable* d) {
-        if (patternDrawMap.count(p)) {
-            delete patternDrawMap[p];
-        }
-        patternDrawMap[p] = d;
-    }
-    std::map<const Pattern*, Utility::CenterDrawable*> patternDrawMap;
-    
 private:
-    SelectionScreen& selectionScreen;
+
 };
 
 #endif

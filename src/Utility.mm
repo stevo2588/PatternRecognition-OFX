@@ -1,6 +1,6 @@
 //==============================================================================
 //
-//  STAMPIES
+//  PATTERN RECOGNITION
 //
 //  Utility.mm
 //
@@ -19,68 +19,6 @@ float Utility::angleBetween (ofVec2f v1, ofVec2f v2) {
     float a = atan2f(v2.y-v1.y, v2.x-v1.x);
     return a;
 }
-
-/*
-std::vector<ofVec2f*> Utility::getCombo(std::vector<ofVec2f*> points, size_t comboSize, size_t index) {
-    //std::vector<ofVec2f*> combo;
-    //std::vector<std::vector<ofVec2f*> > combos;
-    //getEveryCombo(points, comboSize, 0, combo);
-    //return combo;
-    
-    std::vector<ofVec2f*> result(comboSize);
-    std::vector<int> ans(comboSize);
-    int a = points.size();
-    int b = comboSize;
-    long x = (Choose(a, b) - 1) - index;
-    for (int i = 0; i < comboSize; i++) {
-        ans[i] = LargestV(a, b, x);
-        x -= Choose(ans[i], b);
-        a = ans[i];
-        b--;
-    }
-    for (int i = 0; i < comboSize; i++) {
-        result[i] = items[items.Length - 1 - ans[i]];
-    }
-    return result;
-}
-
-int Utility::LargestV(int a, int b, long x) {
-    int v = a - 1;
-    while (Choose(v, b) > x) {
-        v--;
-    }
-    return v;
-}
-
-int Utility::Choose(int n, int k) {
-    long result = 0;
-    int delta;
-    int max;
-    if (n < 0 || k < 0) {
-        throw new ArgumentOutOfRangeException("Invalid negative parameter in Choose()");
-    }
-    if (n < k) {
-        result = 0;
-    } else if (n == k) {
-        result = 1;
-    } else {
-        if (k < n - k) {
-            delta = n - k;
-            max = k;
-        } else {
-            delta = k;
-            max = n - k;
-        }
-        result = delta + 1;
-        for (int i = 2; i <= max; i++) {
-            checked {
-                result = (result * (delta + i)) / i;
-            }
-        }
-    }
-    return result;
-}
-*/
 
 std::vector<std::vector<ofVec2f*> > Utility::getEveryCombo(std::vector<ofVec2f*>& points, size_t comboSize) {
     std::vector<ofVec2f*> combo;

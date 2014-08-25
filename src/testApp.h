@@ -1,6 +1,6 @@
 //==============================================================================
 //
-//  STAMPIES
+//  PATTERN RECOGNITION
 //
 //  testApp.h
 //
@@ -15,10 +15,8 @@
 
 //---- PROJECT HEADERS ----
 #include "TouchPatternManager.h"
-#include "MainScreen.h"
-#include "SelectionScreen.h"
-#include "Canvas.h"
-#include "AppResetter.h"
+#include "MainMenu.h"
+#include "MainLevel.h"
 
 //---- 3RD PARTY HEADERS ----
 #include "ofMain.h"
@@ -47,7 +45,7 @@ public:
     void startLevel(Level& l, int mode=0);
     
     TouchPatternManager tpm;
-    const Pattern* knownPatterns[4];
+    const Pattern* knownPatterns[3];
     size_t knownPatternSize;
     
     Level* currentLevel;
@@ -57,13 +55,8 @@ private:
     ofTrueTypeFont verdana14;
     ofTrueTypeFont verdanaLarge;
         
-    MainScreen mainMenu;
-    SelectionScreen selection;
-    Canvas mainGame;
-    
-    int counter;
-    
-    AppResetter resetter;
+    MainMenu mainMenu;
+    MainLevel mainLevel;
 };
 
 

@@ -1,6 +1,6 @@
 //==============================================================================
 //
-//  STAMPIES
+//  PATTERN RECOGNITION
 //
 //  TouchPattern.h
 //
@@ -8,8 +8,8 @@
 //
 //==============================================================================
 
-#ifndef Stampies_TouchPattern_h
-#define Stampies_TouchPattern_h
+#ifndef PatternRecognition_TouchPattern_h
+#define PatternRecognition_TouchPattern_h
 
 #include "ofMain.h"
 

@@ -12,14 +12,11 @@
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		5326AEA810A23A0500278DE6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5326AEA710A23A0500278DE6 /* CoreLocation.framework */; };
 		53F323EB10A20EDB00E0DAE4 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F323EA10A20EDB00E0DAE4 /* OpenAL.framework */; };
-		5C65C0C719731ED700610F56 /* data in Resources */ = {isa = PBXBuildFile; fileRef = 5C65C0C619731ED700610F56 /* data */; };
-		5C65C0CA1973A05D00610F56 /* AppResetter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C65C0C91973A05D00610F56 /* AppResetter.mm */; };
 		5C6EC62318C2988400DCCCF4 /* Pattern.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C6EC62218C2988400DCCCF4 /* Pattern.mm */; };
 		5C6EC62618C29AD000DCCCF4 /* Utility.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C6EC62518C29AD000DCCCF4 /* Utility.mm */; };
 		5C90F1AA195315CB00066651 /* Level.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C90F1A9195315CB00066651 /* Level.mm */; };
-		5C90F1AC1953167200066651 /* MainScreen.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C90F1AB1953167200066651 /* MainScreen.mm */; };
-		5C90F1AE1953167E00066651 /* SelectionScreen.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C90F1AD1953167E00066651 /* SelectionScreen.mm */; };
-		5C90F1B01953168A00066651 /* Canvas.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C90F1AF1953168A00066651 /* Canvas.mm */; };
+		5C90F1AC1953167200066651 /* MainMenu.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C90F1AB1953167200066651 /* MainMenu.mm */; };
+		5C90F1B01953168A00066651 /* MainLevel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C90F1AF1953168A00066651 /* MainLevel.mm */; };
 		5C90F1B31959EFB300066651 /* TouchPatternManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C90F1B21959EFB300066651 /* TouchPatternManager.mm */; };
 		5C90F1B6195A654F00066651 /* TouchPattern.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C90F1B5195A654F00066651 /* TouchPattern.mm */; };
 		678E130817951530005B6D19 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 678E130717951530005B6D19 /* Icon@2x.png */; };
@@ -61,31 +58,26 @@
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D6058910D05DD3D006BFB54 /* PatternRecognition-OFX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PatternRecognition-OFX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* PatternRecognitionOFX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatternRecognitionOFX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* ofxiOS_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOS_Prefix.pch; sourceTree = "<group>"; };
 		5326AEA710A23A0500278DE6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		53F323EA10A20EDB00E0DAE4 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
-		5C65C0C619731ED700610F56 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = bin/data; sourceTree = "<group>"; };
-		5C65C0C81973A04B00610F56 /* AppResetter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppResetter.h; sourceTree = "<group>"; };
-		5C65C0C91973A05D00610F56 /* AppResetter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppResetter.mm; sourceTree = "<group>"; };
 		5C6EC62118C2987800DCCCF4 /* Pattern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pattern.h; sourceTree = "<group>"; };
 		5C6EC62218C2988400DCCCF4 /* Pattern.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Pattern.mm; sourceTree = "<group>"; };
 		5C6EC62418C29A3E00DCCCF4 /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		5C6EC62518C29AD000DCCCF4 /* Utility.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Utility.mm; sourceTree = "<group>"; };
 		5C90F1A9195315CB00066651 /* Level.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Level.mm; sourceTree = "<group>"; };
-		5C90F1AB1953167200066651 /* MainScreen.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainScreen.mm; sourceTree = "<group>"; };
-		5C90F1AD1953167E00066651 /* SelectionScreen.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SelectionScreen.mm; sourceTree = "<group>"; };
-		5C90F1AF1953168A00066651 /* Canvas.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Canvas.mm; sourceTree = "<group>"; };
+		5C90F1AB1953167200066651 /* MainMenu.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainMenu.mm; sourceTree = "<group>"; };
+		5C90F1AF1953168A00066651 /* MainLevel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainLevel.mm; sourceTree = "<group>"; };
 		5C90F1B11959EF9E00066651 /* TouchPatternManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchPatternManager.h; sourceTree = "<group>"; };
 		5C90F1B21959EFB300066651 /* TouchPatternManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TouchPatternManager.mm; sourceTree = "<group>"; };
 		5C90F1B4195A653B00066651 /* TouchPattern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchPattern.h; sourceTree = "<group>"; };
 		5C90F1B5195A654F00066651 /* TouchPattern.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TouchPattern.mm; sourceTree = "<group>"; };
 		5CA8DF231947636E00371795 /* Level.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
-		5CA8DF26194764F200371795 /* MainScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainScreen.h; sourceTree = "<group>"; };
-		5CA8DF2719476FE500371795 /* SelectionScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectionScreen.h; sourceTree = "<group>"; };
-		5CA8DF281947713200371795 /* Canvas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Canvas.h; sourceTree = "<group>"; };
+		5CA8DF26194764F200371795 /* MainMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainMenu.h; sourceTree = "<group>"; };
+		5CA8DF281947713200371795 /* MainLevel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainLevel.h; sourceTree = "<group>"; };
 		678E130717951530005B6D19 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "bin/data/Icon@2x.png"; sourceTree = "<group>"; };
 		678E130917951536005B6D19 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = bin/data/Icon.png; sourceTree = "<group>"; };
 		678E130B1795153C005B6D19 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = bin/data/Default.png; sourceTree = "<group>"; };
@@ -136,7 +128,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* PatternRecognition-OFX.app */,
+				1D6058910D05DD3D006BFB54 /* PatternRecognitionOFX.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,7 +136,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				5C65C0C619731ED700610F56 /* data */,
 				678E130917951536005B6D19 /* Icon.png */,
 				678E130717951530005B6D19 /* Icon@2x.png */,
 				678E130B1795153C005B6D19 /* Default.png */,
@@ -234,18 +225,14 @@
 				5C6EC62218C2988400DCCCF4 /* Pattern.mm */,
 				E4D8936C11527B74007E1F53 /* testApp.h */,
 				E4D8936D11527B74007E1F53 /* testApp.mm */,
-				5C65C0C81973A04B00610F56 /* AppResetter.h */,
-				5C65C0C91973A05D00610F56 /* AppResetter.mm */,
 				5C6EC62418C29A3E00DCCCF4 /* Utility.h */,
 				5C6EC62518C29AD000DCCCF4 /* Utility.mm */,
 				5CA8DF231947636E00371795 /* Level.h */,
 				5C90F1A9195315CB00066651 /* Level.mm */,
-				5CA8DF26194764F200371795 /* MainScreen.h */,
-				5C90F1AB1953167200066651 /* MainScreen.mm */,
-				5CA8DF2719476FE500371795 /* SelectionScreen.h */,
-				5C90F1AD1953167E00066651 /* SelectionScreen.mm */,
-				5CA8DF281947713200371795 /* Canvas.h */,
-				5C90F1AF1953168A00066651 /* Canvas.mm */,
+				5CA8DF26194764F200371795 /* MainMenu.h */,
+				5C90F1AB1953167200066651 /* MainMenu.mm */,
+				5CA8DF281947713200371795 /* MainLevel.h */,
+				5C90F1AF1953168A00066651 /* MainLevel.mm */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -253,9 +240,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* PatternRecognition-OFX */ = {
+		1D6058900D05DD3D006BFB54 /* PatternRecognitionOFX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "PatternRecognition-OFX" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "PatternRecognitionOFX" */;
 			buildPhases = (
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
@@ -266,9 +253,9 @@
 			dependencies = (
 				E41D410413B3A11300A75A5D /* PBXTargetDependency */,
 			);
-			name = "PatternRecognition-OFX";
+			name = PatternRecognitionOFX;
 			productName = iPhone;
-			productReference = 1D6058910D05DD3D006BFB54 /* PatternRecognition-OFX.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* PatternRecognitionOFX.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -289,7 +276,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PatternRecognition-OFX" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PatternRecognitionOFX" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -309,7 +296,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* PatternRecognition-OFX */,
+				1D6058900D05DD3D006BFB54 /* PatternRecognitionOFX */,
 			);
 		};
 /* End PBXProject section */
@@ -335,7 +322,6 @@
 				678E130A17951536005B6D19 /* Icon.png in Resources */,
 				678E130C1795153C005B6D19 /* Default.png in Resources */,
 				678E130E17951540005B6D19 /* Default@2x.png in Resources */,
-				5C65C0C719731ED700610F56 /* data in Resources */,
 				678E131017951549005B6D19 /* Default-568h@2x~iphone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,10 +337,8 @@
 				E4D8936F11527B74007E1F53 /* testApp.mm in Sources */,
 				5C90F1AA195315CB00066651 /* Level.mm in Sources */,
 				5C90F1B31959EFB300066651 /* TouchPatternManager.mm in Sources */,
-				5C90F1B01953168A00066651 /* Canvas.mm in Sources */,
-				5C90F1AE1953167E00066651 /* SelectionScreen.mm in Sources */,
-				5C65C0CA1973A05D00610F56 /* AppResetter.mm in Sources */,
-				5C90F1AC1953167200066651 /* MainScreen.mm in Sources */,
+				5C90F1B01953168A00066651 /* MainLevel.mm in Sources */,
+				5C90F1AC1953167200066651 /* MainMenu.mm in Sources */,
 				5C90F1B6195A654F00066651 /* TouchPattern.mm in Sources */,
 				5C6EC62618C29AD000DCCCF4 /* Utility.mm in Sources */,
 				5C6EC62318C2988400DCCCF4 /* Pattern.mm in Sources */,
@@ -384,7 +368,7 @@
 				GCC_PREFIX_HEADER = ofxiOS_Prefix.pch;
 				INFOPLIST_FILE = "ofxiOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				PRODUCT_NAME = "PatternRecognition-OFX";
+				PRODUCT_NAME = PatternRecognitionOFX;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
 				VALID_ARCHS = "armv6 armv7";
@@ -402,7 +386,7 @@
 				GCC_PREFIX_HEADER = ofxiOS_Prefix.pch;
 				INFOPLIST_FILE = "ofxiOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				PRODUCT_NAME = "PatternRecognition-OFX";
+				PRODUCT_NAME = PatternRecognitionOFX;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
 				VALID_ARCHS = "armv6 armv7";
@@ -472,7 +456,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "PatternRecognition-OFX" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "PatternRecognitionOFX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
@@ -481,7 +465,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PatternRecognition-OFX" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PatternRecognitionOFX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
