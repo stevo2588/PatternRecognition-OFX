@@ -29,10 +29,6 @@ class testApp : public ofxiOSApp {
 public:
     testApp();
     
-    // return a 3d vector populated with image files from the resource folder
-    static std::vector<std::vector<std::vector<ofFile> > > GetImageFiles();
-    static std::vector<ofFile> GetMaterialImageFiles();
-    
     void setup();
     void update();
     void draw();
