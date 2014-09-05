@@ -64,6 +64,7 @@
 		32CA4F630368D1EE00C91783 /* ofxiOS_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOS_Prefix.pch; sourceTree = "<group>"; };
 		5326AEA710A23A0500278DE6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		53F323EA10A20EDB00E0DAE4 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		5C39ED0819BA2DAA006849A5 /* TouchPatternListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchPatternListener.h; sourceTree = "<group>"; };
 		5C6EC62118C2987800DCCCF4 /* Pattern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pattern.h; sourceTree = "<group>"; };
 		5C6EC62218C2988400DCCCF4 /* Pattern.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Pattern.mm; sourceTree = "<group>"; };
 		5C6EC62418C29A3E00DCCCF4 /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
@@ -219,6 +220,7 @@
 				E4D8936B11527B74007E1F53 /* main.mm */,
 				5C90F1B4195A653B00066651 /* TouchPattern.h */,
 				5C90F1B5195A654F00066651 /* TouchPattern.mm */,
+				5C39ED0819BA2DAA006849A5 /* TouchPatternListener.h */,
 				5C90F1B11959EF9E00066651 /* TouchPatternManager.h */,
 				5C90F1B21959EFB300066651 /* TouchPatternManager.mm */,
 				5C6EC62118C2987800DCCCF4 /* Pattern.h */,

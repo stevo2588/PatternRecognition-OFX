@@ -14,7 +14,7 @@
 #include "Level.h"
 
 #include "MainLevel.h"
-#include "TouchPatternManager.h"
+#include "TouchPatternListener.h"
 #include "Utility.h"
 
 

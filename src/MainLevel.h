@@ -12,7 +12,7 @@
 #define PatternRecognition_Canvas_h
 
 #include "Level.h"
-#include "TouchPatternManager.h"
+#include "TouchPatternListener.h"
 #include "Utility.h"
 
 class MainLevel : public Level, public TouchPatternListener {

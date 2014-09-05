@@ -13,27 +13,12 @@
 
 #include "Pattern.h"
 #include "TouchPattern.h"
+#include "TouchPatternListener.h"
 
 #include "ofMain.h"
 #include "ofxMultiTouchListener.h"
 
 class Level;
-
-class TouchPatternListener {
-public:
-    virtual void tDown(ofVec2f & touch) {}
-    virtual void tMoved(ofVec2f & touch) {}
-    virtual void tUp(ofVec2f & touch) {}
-    
-    virtual void unassignedDown(ofVec2f & touch) {}
-    virtual void unassignedMoved(ofVec2f & touch) {}
-    virtual void unassignedUp(ofVec2f & touch) {}
-    virtual void unassignedCancelled(ofVec2f & touch) {}
-    
-    virtual void patternDown(TouchPattern & pat) {}
-    virtual void patternMoved(TouchPattern & pat) {}
-    virtual void patternUp(TouchPattern & pat) {}
-};
 
 class TouchPatternManager : public ofxMultiTouchListener {
 public:
