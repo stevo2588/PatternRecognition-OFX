@@ -22,15 +22,7 @@ class Level;
 
 class TouchPatternManager : public ofxMultiTouchListener {
 public:
-    TouchPatternManager(size_t maxTouches, size_t maxPatDetection)
-    : maxTouches(maxTouches), maxPatDetection(maxPatDetection), detectedPatterns(maxPatDetection),
-      patInUse(maxPatDetection, false), frameDelay(15)
-    {
-        unassigned.reserve(maxTouches);
-        registeredPatterns.reserve(maxPatDetection);
-        
-        ofRegisterTouchEvents(this);
-    }
+    TouchPatternManager(size_t maxTouches, size_t maxPatDetection);
     
     void registerTouchPatternEvents(TouchPatternListener& tpl) { listeners.push_back( &tpl ); }
     void unregisterTouchPatternEvents(TouchPatternListener& tpl) {
@@ -78,7 +70,8 @@ private:
     
     std::vector<TouchPatternListener*> listeners;
     
-    // this is how many frames we wait before we actually check for a pattern
+    // this is how many frames we wait before we actually check for a pattern (in order to make sure
+    // the stamp has settled)
     unsigned frameDelay;
     
     std::vector<unsigned> patternCheckDelay;

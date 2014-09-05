@@ -15,6 +15,15 @@
 
 #include <limits>
 
+TouchPatternManager::TouchPatternManager(size_t maxTouches, size_t maxPatDetection)
+: maxTouches(maxTouches), maxPatDetection(maxPatDetection), detectedPatterns(maxPatDetection),
+patInUse(maxPatDetection, false), frameDelay(15)
+{
+    unassigned.reserve(maxTouches);
+    registeredPatterns.reserve(maxPatDetection);
+    
+    ofRegisterTouchEvents(this);
+}
 
 const Pattern* TouchPatternManager::registerPattern(std::vector<ofVec2f> points, int tolerance) {
     registeredPatterns.push_back(Pattern(points, tolerance));
